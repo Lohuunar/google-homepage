@@ -4,33 +4,39 @@
         <style>
             #body {
                 background-color: white;
+
+            }
+            #div1{
                 display: grid;
                 height: 100%;
                 width: 100%;
                 grid-template-columns: 20% 20% 20% 20% 20%;
-                grid-template-rows: 20% 20% 20% 20% 20%;
+                grid-template-rows: 20% 20% 20% 20% 20%;              
             }
             #image {
                 display: flex;
                 max-width: 100%;
                 height: auto;
-                
+                grid-area: 3/3;
+            }
+            #form1 {
+                grid-area: 4/3;
             }
         </style>
         <title> My take on the google homepage</title>
     </head>
 
     <body id="body">
-        <div>
-            <div>
+        <div id="div1">
+            <div id="image" > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"> </div>
+            <div id="form1">
+                <form action="A">
+                    <input type="text">
+                </form>
                 <div>
                     <div>
                         <div>
-                                <div id="image" > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"> </div>
-
-                            <form action="A">
-                                <input type="text">
-                            </form>
+                            
                         </div>
                     </div>
                 </div>          
