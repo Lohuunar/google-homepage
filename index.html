@@ -4,41 +4,43 @@
         <style>
             #body {
                 background-color: white;
-
             }
-            #div1{
-                display: grid;
-                height: 100%;
-                width: 100%;
-                grid-template-columns: 20% 20% 20% 20% 20%;
-                grid-template-rows: 20% 20% 20% 20% 20%;              
+            .div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             #image {
-                display: flex;
                 max-width: 100%;
                 height: auto;
-                grid-area: 3/3;
-                a
+                margin: auto;
+            }
+            #formdiv {
+                margin: auto;
             }
             #form1 {
-                grid-area: 4/3;
+                margin: auto;
             }
         </style>
         <title> My take on the google homepage</title>
     </head>
 
     <body id="body">
-        <div id="div1">
+        <div class="div">
+            
+        </div>        
+        <div class="div">
             <div id="image" > <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"> </div>
-            <div id="form1"> 
-                <form action="A">
-                    <input type="text">
-                </form>
-                <div>
-                    <div>
-                        <div>
-                            
-                        </div>
+        </div>
+                <div class="div">
+                    <div id="formdiv">
+                        <form id="form1" action="A">
+                            <input id="form1" type="text">
+                        </form>
+                        <button id="button1" type="submit">Google Search</button>
+                        <button id="button2" type="submit">I'm feeling lucky</button>
+                    </div>        
+                        
                     </div>
                 </div>          
             </div>
